@@ -19,7 +19,6 @@ public class todaysPractice {
             System.out.println("Thank you " + name + ", your are " + age + "years old." );
             System.out.println("and your quote is " + quote + ".");
 
-
         }
     }
 
