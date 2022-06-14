@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MethodsExercises {
 
     //    public static void main(String[] args) {
@@ -9,6 +11,7 @@ public class MethodsExercises {
 //
 //        public static int getInteger(int min, int max);
     public static int addition(int number1, int number2) {
+
         return number1 + number2;
     }
 
@@ -36,10 +39,13 @@ public class MethodsExercises {
 //
 
 
-//        System.out.print("Enter a number between 1 and 10: ");
+    //        System.out.print("Enter a number between 1 and 10: ");
 //    int userInput = getInteger(1, 10);{
-
-
+//. 3 Factorial of a number
+//    public static int getInteger(int min, int max) {
+//        Scanner scan = new Scanner(System.in);
+//        System.out.println("Display the factorial of the number entered by the user must between ");
+//    }
 
 //            return number;
 public static void main(String[] args) {
@@ -48,6 +54,8 @@ public static void main(String[] args) {
     System.out.println(multiply(30, 5));
     System.out.println(divide(50, 10));
     System.out.println(modulus(20, 5));
+
+
     }
 }
 
