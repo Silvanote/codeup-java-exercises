@@ -12,6 +12,7 @@ public class MethodsExercises {
 //        public static int getInteger(int min, int max);
 
     public static int addition(int number1, int number2) {
+
         return number1 + number2;
     }
 
