@@ -1,3 +1,5 @@
+package PracticeOutofClass;
+
 import java.util.Scanner;
 
 public class ifElseStatements {

@@ -1,3 +1,5 @@
+package PracticeOutofClass;
+
 public class roflcoptor {
     public static void main(String[] args) {
 

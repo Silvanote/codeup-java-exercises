@@ -1,3 +1,5 @@
+package PracticeOutofClass;
+
 public class Integerstut {
     public static void main(String[] args) {
 

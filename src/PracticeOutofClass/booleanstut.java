@@ -1,3 +1,5 @@
+package PracticeOutofClass;
+
 public class booleanstut {
     public static void main(String[] args) {
 

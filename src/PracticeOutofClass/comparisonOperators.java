@@ -1,3 +1,5 @@
+package PracticeOutofClass;
+
 public class comparisonOperators {
     public static void main(String[] args) {
 

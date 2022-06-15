@@ -1,3 +1,5 @@
+package PracticeOutofClass;
+
 public class DubLongFloat {
     public static void main(String[] args) {
 
