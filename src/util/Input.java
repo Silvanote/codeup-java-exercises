@@ -1,44 +1,61 @@
-import java.util.Scanner;
+package util;
 
-public util;
+import java.util.Scanner;
 
 public class Input {
     private Scanner scanner = new Scanner(System.in);
 
-    public String getString(){
-        System.out.println("Need to display a string.");
+    public void clear() {
+        scanner.nextLine();
+    }
+
+    public String getString() {
+        System.out.println("This input must be a string but input a number");
         return scanner.nextLine();
     }
-    boolean yesNo(){
-        System.out.println("True or False?");
-        String Input = scanner.nextLine();
-        if(Input.equalsIgnoreCase("true");
-        return true;
-    } else{
-        return false;
+
+    public boolean theTruth() {
+        System.out.println("Please provide a number aka int.");
+        String trueOrFalse = this.scanner.nextLine();
+        trueOrFalse = trueOrFalse.toLowerCase();
+        if(trueOrFalse.equalsIgnoreCase("no")){
+                System.out.println("Need the number still");
+                return theTruth();
+         }else{
+                return theTruth();
+        }
     }
 
-    public int getInt(){
-        System.out.println("Please give me an integer.");
+    public int getInt() {
+        System.out.println("Please provide an integer again");
         return scanner.nextInt();
     }
-public double getDouble(double min, double max) {
-    System.out.println("User, please enter two numbers between %d and %d. %n", min, max);
-    int inputedNumber = scanner.nextInt();
-    if(inputedNumber > min && inputedNumber < max) {
-        return inputedNumber;
-    } else {
-        System.err.println("Enter another number between the numbers previously requested.");
-        return getInt()(min, max);
 
-        public double getDouble(double min, double max) {
-            System.out.printf("User, please enter two numbers between %d and %d. %n", min, max);
-            int inputedNumber = scanner.nextInt();
-            if(inputedNumber > min && inputedNumber < max) {
-                return inputedNumber;
-            } else {
-                System.err.println("Enter another number between the numbers previously requested.");
-                return getInt()(min, max);
-}
-}
+    public int getInt(int min, int max) {
+        System.out.printf("Enter a number (int) between %d and %d.%n", min, max);
+        int Intergerneeded = scanner.nextInt();
+        if (Intergerneeded > min && Intergerneeded < max) {
+            return Intergerneeded;
+        } else {
+            System.err.println("You have entered a number that needs to be within set parameters");
+            return getInt(min, max);
+        }
+    }
+
+    public double getDouble() {
+        System.out.println("Provide a number to double!");
+        return scanner.nextDouble();
+    }
+
+    public double getDouble(double min, double max) {
+        System.out.printf("Enter a number between the following numbers of  %f and %f.%n", min, max);
+        double dubInput = scanner.nextDouble();
+        if (dubInput > min && dubInput < max) {
+            return dubInput;
+        } else {
+            System.err.println("Number out of range!");
+            return getDouble(min, max);
+        }
+    }
+
 }
