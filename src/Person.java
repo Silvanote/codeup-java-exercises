@@ -1,29 +1,32 @@
 import org.w3c.dom.ls.LSOutput;
-
+//TODO: return the person's name
 public class Person {
     private String name;
 
-        public String firstName;
-
-        public String sayHello2() {
-            return String.format("Hello from %s %s!", firstName);
-        }
-
-
-
-    //TODO: return the person's name
-
-    public static void main(String[] args) {
-        Person Juan = new Person();
-        Juan.firstName = "Juan";
-        System.out.println(Juan.sayHello2());
+    public Person(String name) {
+        this.name = name;
     }
 
+//TODO: return the person's name
 
-    //TODO: change the name field to the passed value
+    public String getName() {
+//TODO: change the name field to the passed value
+        return name;
+    }
 
+    public void setName(String Name) {
+        this.name = name;
+    }
     public void sayHello(){
-        System.out.println(sayHello2());
+        System.out.println("hello, my name is %s,", name);
     }
-}
 //TODO: print a message to the console using the person's name
+}
+public static void main(){
+
+}
+
+//    public void setName(String name) {
+//        this.name = name;
+//    }
+//}
