@@ -1,42 +1,26 @@
 package shapes;
 
-public class Rectangle {
-    protected int length;
-    protected int width;
 
-    public Rectangle() {
+abstract class Rectangle {
+    public abstract double getPerimter();
+    abstract double getArea();
     }
 
-    public Rectangle(int length, int width) {
-        this.length = length;
-        this.width = width;
+abstract class Employee {
+    protected String name;
+    protected String department;
+    public Employee(String name, String department) {
+        this.name = name;
+        this.department = department;
+    }
+    public String getName() {
+        return name;
+    }
+    public String getDepartment() {
+        return department;
     }
 
-    public int getLength() {
-        return length;
-    }
-
-    public void setLength(int length) {
-        this.length = length;
-    }
-
-    public int getWidth() {
-        return width;
-    }
-
-    public void setWidth(int width) {
-        this.width = width;
-    }
-
-    public int getArea() {
-        System.out.println("The rectangle's area!");
-        return length * width;
-    }
-
-    public int getPerimeter() {
-        System.out.println("The rectangle's perimeter");
-        return (2 * length) + (2 * width);
-    }
+    public abstract String work();
 }
 
 
