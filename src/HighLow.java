@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class HighLowExercise {
+public class HighLow {
     public static void GameDevelopment() {
 
 

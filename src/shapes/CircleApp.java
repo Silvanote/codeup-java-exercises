@@ -15,13 +15,13 @@ public class CircleApp {
             System.out.println("Accomplished the required actions");
             System.out.println("Would like to still play Java?");
             in.clear();
-            keepMakingCircles = in.yesNo();
+           keepMakingCircles = in.yesorno();
             if (keepMakingCircles) {
-                System.out.println("HOORAY!!! What a wonderful day!");
+                System.out.println();
             } else {
-                System.out.println("Another cirlcle example.");
+                System.out.println();
             }
         }
-        System.out.println("Bonus couldn't do so needed intstructor help.");
+            System.out.println("Bonus couldn't do so needed intstructor help.");
+        }
     }
-}

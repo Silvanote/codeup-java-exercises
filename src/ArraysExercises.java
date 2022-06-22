@@ -25,6 +25,7 @@ public class ArraysExercises {
             System.out.println(person.getName());
         }
         System.out.println("Use this to break in between =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
+
     Person Justin = new Person("Justin");
         people = addPerson(people, Justin);
         for(Person person : people){

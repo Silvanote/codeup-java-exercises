@@ -3,6 +3,7 @@ package util;
 import java.util.Scanner;
 
 public class Input {
+
     private Scanner scanner = new Scanner(System.in);
 
     public void clear() {
@@ -10,19 +11,20 @@ public class Input {
     }
 
     public String getString() {
-        System.out.println("This input must be a string but input a number");
+        System.out.println("Hit \"enter\" because this string is only here to start the OOP Exercise");
         return scanner.nextLine();
     }
 
-    public boolean theTruth() {
-        System.out.println("Please provide a number aka int.");
+    public boolean yesorno() {
+        System.out.println("type yes or no");
         String trueOrFalse = this.scanner.nextLine();
-        trueOrFalse = trueOrFalse.toLowerCase();
+//        trueOrFalse = trueOrFalse.toLowerCase();
         if(trueOrFalse.equalsIgnoreCase("no")){
                 System.out.println("Need the number still");
-                return theTruth();
+                return yesorno();
          }else{
-                return theTruth();
+                System.out.println("Thank you");
+                return yesorno();
         }
     }
 
@@ -53,7 +55,7 @@ public class Input {
         if (dubInput > min && dubInput < max) {
             return dubInput;
         } else {
-            System.err.println("Number out of range!");
+            System.err.println("Please follow the instructions and number must be within range specified.");
             return getDouble(min, max);
         }
     }
