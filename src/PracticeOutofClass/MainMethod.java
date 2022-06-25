@@ -2,10 +2,15 @@ package PracticeOutofClass;
 
 public class MainMethod {
     public static void main(String[] args) {
+        String[] s = {"hey","sup"};
+//        saySomething(s);
         sayHi();
+        sayBye();
     }
-
-    public static void sayHi() {
+    static void sayHi(){
         System.out.println("Hi");
+    }
+    public static void sayBye() {
+        System.out.println("Bye");
     }
 }
