@@ -22,6 +22,12 @@ public class NestedLoop {
             for (int column = 0; column < 3; column++) {
                 System.out.println(Morecolors[row][column]);
             }
+        System.out.println("____________________");
+        for(int i =0; i<5;i++){
+            for(int j=0; j<10; j++){
+                System.out.println("i: " + i + ", j: " + j);
+            }
+        }
     }
 
 }
