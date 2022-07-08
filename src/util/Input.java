@@ -59,5 +59,30 @@ public class Input {
             return getDouble(min, max);
         }
     }
+    public long getHex() {
+        System.out.println("Start with inputting a hexadecimal number");
+        while (true) {
+            try {
+                long hexidecimal = Long.valueOf(scanner.nextLine(), 16);
+                System.out.println("Number is a hexadecimal numbrer");
+                return hexidecimal;
+            } catch (NumberFormatException e) {
+                System.out.println("This is not a hexadecimal, pick again.");
+            }
+        }
+    }
+
+    public long getBinary() {
+        System.out.println("Start with inputting a binary number");
+        while (true) {
+            try {
+                long binary = Long.valueOf(scanner.nextLine(), 4);
+                System.out.println("Number is a binary number");
+                return binary;
+            } catch (NumberFormatException e) {
+                System.out.println("This is not a binary number, pick again..");
+            }
+        }
+    }
 
 }
