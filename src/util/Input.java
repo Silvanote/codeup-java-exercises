@@ -15,6 +15,9 @@ public class Input {
         return scanner.nextLine();
     }
 
+    public void scanreset(){
+        scanner.nextLine();
+    }
     public boolean yesorno() {
         System.out.println("type yes or no");
         String trueOrFalse = this.scanner.nextLine();
@@ -29,8 +32,14 @@ public class Input {
     }
 
     public int getInt() {
-        System.out.println("Please provide an integer again");
-        return scanner.nextInt();
+        while (true) {
+            try {
+                System.out.println("Please provide an integer");
+                return Integer.valueOf(getString());
+            } catch (NumberFormatException e) {
+                System.out.println("Input is not an integer.");
+            }
+        }
     }
 
     public int getInt(int min, int max) {
@@ -45,8 +54,14 @@ public class Input {
     }
 
     public double getDouble() {
-        System.out.println("Provide a number to double!");
-        return scanner.nextDouble();
+        while (true) {
+            try {
+                System.out.println("Provide a number to double up ");
+                return Double.valueOf(getString());
+            } catch (NumberFormatException e) {
+                System.out.println("Input is not a number.");
+            }
+        }
     }
 
     public double getDouble(double min, double max) {
